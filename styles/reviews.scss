@@ -1,0 +1,92 @@
+@import '../utilities/variables';
+@import '../utilities/responsive';
+
+#reviews {
+    margin-top: 96px;
+    padding-left: 80px;
+    position: relative;
+    z-index: 1;
+    
+    .title {
+        font-size: 48px;
+        color: $textColor;
+    }
+
+    .title-icon {
+        margin-top: 16px;
+        margin-bottom: 80px;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        gap: 32px;
+
+        .card {
+            padding: 48px 32px;
+
+            .avatar {
+                margin-bottom: 32px;
+                width: 120px;
+                height: 120px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .text {
+                color: $textColor;
+                font-size: 21px;
+                line-height: 28.35px;
+                margin: 8px 0;
+            }
+    
+            .person {
+                display: flex;
+                align-items: center;
+    
+                .name {
+                    font-size: 21px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        
+    }
+
+    &::after {
+        content: url('/assets/Mask-group-reverse.svg');
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        z-index: -1;
+    }
+
+    @include xs {
+        padding-right: 80px;
+
+        .cards-wrapper {
+            flex-direction: column;
+        }
+    }
+
+
+    @include sm {
+        padding-right: 80px;
+
+        .cards-wrapper {
+            flex-direction: column;
+        }
+    }
+
+    @include lg {
+        padding-right: 0;
+
+        .cards-wrapper {
+            flex-direction: row;
+        }
+    }
+}

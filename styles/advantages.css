@@ -1,0 +1,43 @@
+#advantages {
+  padding: 39.96px 80px;
+  margin-top: 96px;
+}
+#advantages div:first-child h2 {
+  font-size: 48px;
+  color: #191B24;
+}
+#advantages div:first-child .icon-wrapper {
+  margin-top: 24px;
+}
+#advantages div:first-child button {
+  margin-top: 48px;
+}
+#advantages .card {
+  padding: 64px 32px 48px 32px;
+}
+#advantages .card .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #191B24;
+}
+#advantages .card .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #272A39;
+}
+@media (min-width: 576px) {
+  #advantages div:first-child {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #advantages div:first-child {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  #advantages div:first-child {
+    text-align: left;
+  }
+}/*# sourceMappingURL=advantages.css.map */

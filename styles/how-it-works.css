@@ -1,0 +1,112 @@
+#how-it-works {
+  background-color: #00D5AE;
+  position: relative;
+  z-index: 1;
+}
+#how-it-works .title {
+  color: #FFFFFF;
+  font-size: 48px;
+}
+#how-it-works .title-yellow-icon {
+  margin-top: 24px;
+  margin-bottom: 61px;
+}
+#how-it-works .card {
+  display: flex;
+  padding: 48px 32px;
+  align-items: center;
+  gap: 16px;
+  z-index: 9999;
+}
+#how-it-works .card .number {
+  color: #F5BD01;
+  font-size: 90px;
+  font-weight: 200;
+}
+#how-it-works .card .text {
+  font-size: 21px;
+  line-height: 28.35px;
+  width: 450px;
+  color: #1E1E1E;
+}
+#how-it-works .card:not(:last-child) {
+  margin-bottom: 32px;
+}
+#how-it-works .cards-illustration {
+  position: absolute;
+  top: 149.5px;
+  left: 60%;
+}
+#how-it-works::after {
+  content: url("/assets/Mask-group.svg");
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 75%;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  #how-it-works {
+    padding: 96px 100px;
+  }
+  #how-it-works .card:nth-child(even) {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #how-it-works .cards-illustration {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #how-it-works {
+    padding: 96px 100px;
+  }
+  #how-it-works .card:nth-child(even) {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #how-it-works .cards-illustration {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #how-it-works {
+    padding: 96px 100px;
+  }
+  #how-it-works .card:nth-child(even) {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #how-it-works .cards-illustration {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #how-it-works {
+    padding: 96px 190px;
+  }
+  #how-it-works .card:nth-child(even) {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #how-it-works .cards-illustration {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #how-it-works {
+    padding: 96px 190px;
+  }
+  #how-it-works .card:nth-child(even) {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #how-it-works .cards-illustration {
+    display: block;
+  }
+}/*# sourceMappingURL=how-it-works.css.map */

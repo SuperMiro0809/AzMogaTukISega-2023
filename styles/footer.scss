@@ -1,0 +1,32 @@
+@import '../utilities/variables';
+
+footer {
+    margin-top: 96px;
+    background-color: $white;
+    border-radius: 32px 32px 0px 0px;
+    padding: 48px 0px;
+
+    .company {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23.45px;
+
+        h1 {
+            color: $paragraph100;
+        }
+    }
+
+    .links {
+        display: flex;
+        gap: 24px;
+        margin-top: 48.24px;
+        justify-content: center;
+
+        a {
+            color: $paragraph100;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+}

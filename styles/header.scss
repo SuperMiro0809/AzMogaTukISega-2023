@@ -1,0 +1,217 @@
+@import '../utilities/variables';
+@import '../utilities/responsive';
+
+header {
+    padding: 39.96px 80px;
+    background-repeat: no-repeat;
+    height: 772.68px; 
+    background-position-x: right, left;
+    background-position-y: 0, 141px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: $black;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 15px;
+            padding-left: 32px;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+        }
+
+        &.sticky {
+            position: fixed;
+            top: 0;
+            background-color: white;
+            padding: 16px 80px;
+            z-index: 4;
+            width: 100%;
+            margin: 0 -80px
+        }
+
+        .mobile-menu {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+
+            div {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .card {
+        margin-top: 45.5px;
+        display: flex;
+
+        .title {
+            flex-basis: 40%;
+
+            @mixin title {
+                color: $darkBlue;
+                font-size: 60px;
+                margin: 0;
+                line-height: 57px;
+            }
+
+            .title-light {
+                @include title;
+                font-weight: 400;
+            }
+    
+            .title-bold {
+                @include title;
+            }
+    
+            .title-icon {
+                margin-top: 24px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                color: $paragraph70;
+            }
+
+            button {
+                margin-top: 48px;
+            }
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            
+            .hero-image {
+                width: 622.85px;
+                height: 690.31px;
+                position: absolute;
+                top: -30%;
+                right: -10%;
+            }
+        }
+    }
+
+    @include xs {
+        background-image: url('/assets/Hero_Background-Element-1.svg');
+        margin-bottom: 200px;
+
+        nav {
+            button {
+                display: none;
+            }
+
+            .nav-list {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+        }
+
+        .card {
+            text-align: center;
+            padding: 112px 20px;
+
+            .hero-image-wrapper {
+                flex-basis: 0;
+    
+                .hero-image {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include sm {
+        background-image: url('/assets/Hero_Background-Element-1.svg');
+        margin-bottom: 200px;
+
+        nav {
+            button {
+                display: block;
+            }
+
+            .nav-list {
+                display: block;
+            }
+            
+            .mobile-menu {
+                display: none;
+            }
+        }
+
+
+        .card {
+            text-align: center;
+            padding: 112px 20px;
+
+            .hero-image-wrapper {
+                flex-basis: 0;
+    
+                .hero-image {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include md {
+        background-image: url('/assets/Hero_Background-Element-1.svg');
+        margin-bottom: 200px;
+
+        .card {
+            text-align: center;
+            padding: 112px 96px;
+
+            .hero-image-wrapper {
+                flex-basis: 0;
+    
+                .hero-image {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include lg {
+        background-image: url('/assets/Hero_Background-Element-1.svg'), url('/assets/Hero_Background-Element-2.svg');
+        margin-bottom: 200px;
+
+        .card {
+            text-align: left;
+
+            .hero-image-wrapper {
+                flex-basis: 60%;
+
+                .hero-image {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @include xl {
+        background-image: url('/assets/Hero_Background-Element-1.svg'), url('/assets/Hero_Background-Element-2.svg');
+        margin-bottom: 0;
+
+        .card {
+            text-align: left;
+
+            .hero-image-wrapper {
+                flex-basis: 60%;
+
+                .hero-image {
+                    display: block;
+                }
+            }
+        }
+    }
+}

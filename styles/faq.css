@@ -1,0 +1,69 @@
+#faq {
+  margin-top: 164px;
+  padding: 0 80px;
+}
+#faq .card {
+  padding: 96px 64px;
+  display: flex;
+  gap: 64px;
+}
+#faq .card .text-wrapper {
+  flex-basis: 357px;
+}
+#faq .card .text-wrapper h2 {
+  font-size: 48px;
+  color: #1E1E1E;
+  margin-bottom: 16px;
+}
+#faq .card .text-wrapper p {
+  font-size: 16px;
+  color: #4A506D;
+  margin-top: 24px;
+}
+#faq .card .questions {
+  flex-basis: 100%;
+}
+#faq .card .questions .question {
+  cursor: pointer;
+  border-bottom: 1px solid #C2C6D6;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+#faq .card .questions .question article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#faq .card .questions .question article p {
+  font-size: 21px;
+  color: #272A39;
+}
+#faq .card .questions .question article img {
+  margin-left: 8px;
+}
+#faq .card .questions .question article.open {
+  font-weight: 700;
+  color: #191B24;
+  border-bottom: none;
+}
+#faq .card .questions .question .inner-text {
+  display: none;
+}
+#faq .card .questions .question p {
+  margin-top: 24px;
+}
+@media (max-width: 576px) {
+  #faq .card {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) {
+  #faq .card {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  #faq .card {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=faq.css.map */

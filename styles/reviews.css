@@ -1,0 +1,76 @@
+#reviews {
+  margin-top: 96px;
+  padding-left: 80px;
+  position: relative;
+  z-index: 1;
+}
+#reviews .title {
+  font-size: 48px;
+  color: #1E1E1E;
+}
+#reviews .title-icon {
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+#reviews .cards-wrapper {
+  display: flex;
+  gap: 32px;
+}
+#reviews .cards-wrapper .card {
+  padding: 48px 32px;
+}
+#reviews .cards-wrapper .card .avatar {
+  margin-bottom: 32px;
+  width: 120px;
+  height: 120px;
+}
+#reviews .cards-wrapper .card .avatar img {
+  width: 100%;
+  height: 100%;
+}
+#reviews .cards-wrapper .card .text {
+  color: #1E1E1E;
+  font-size: 21px;
+  line-height: 28.35px;
+  margin: 8px 0;
+}
+#reviews .cards-wrapper .card .person {
+  display: flex;
+  align-items: center;
+}
+#reviews .cards-wrapper .card .person .name {
+  font-size: 21px;
+  font-weight: 700;
+}
+#reviews::after {
+  content: url("/assets/Mask-group-reverse.svg");
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  #reviews {
+    padding-right: 80px;
+  }
+  #reviews .cards-wrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) {
+  #reviews {
+    padding-right: 80px;
+  }
+  #reviews .cards-wrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  #reviews {
+    padding-right: 0;
+  }
+  #reviews .cards-wrapper {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=reviews.css.map */

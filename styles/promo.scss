@@ -1,0 +1,68 @@
+@import '../utilities/variables';
+@import '../utilities/responsive';
+
+#promo {
+    padding: 0 142.5px;
+    margin-top: 129px;
+    position: relative;
+    z-index: 1;
+    
+    h1 {
+        font-size: 101px;
+        line-height: 101px;
+
+        .name {
+            color: $pink;
+        }
+
+        .text {
+            -webkit-text-fill-color: $background;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $pink;
+        }
+    }
+
+    @include xs {
+        padding: 0 64px;
+
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+
+    @include sm {
+        padding: 0 64px;
+
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+
+    @include md {
+        padding: 0 142.5px;
+
+        h1 {
+            font-size: 101px;
+            line-height: 101px;
+        }
+
+        &::after {
+            content: url('/assets/White_Background.svg');
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: -80%;
+            z-index: -1;
+        }
+    }
+}

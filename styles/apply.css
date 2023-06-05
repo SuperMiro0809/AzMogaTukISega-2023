@@ -1,0 +1,154 @@
+#apply {
+  margin-top: 211.18px;
+  background-image: url("/assets/icons/icons-frame.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+#apply .card {
+  background-color: #2E2EC8;
+  margin: 0 auto;
+  padding: 96px 0;
+  position: relative;
+  z-index: 2;
+}
+#apply .card .card-head {
+  text-align: center;
+}
+#apply .card .card-head .title {
+  color: #FFFFFF;
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+#apply .card .card-head .subtitle {
+  color: #C2C6D6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+#apply .card .card-head .icon-section {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+#apply .card .card-head .icon-section .pink,
+#apply .card .card-head .icon-section .green {
+  transform: scaleY(-1);
+}
+#apply .card form {
+  padding: 0 220px;
+  margin-top: 65.4px;
+}
+#apply .card form label {
+  color: #C2C6D6;
+  font-size: 18px;
+  font-weight: 500;
+}
+#apply .card form input {
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #C2C6D6;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  color: #1E1E1E;
+}
+#apply .card form input::-moz-placeholder {
+  font-size: 18px;
+  color: #9EA3BD;
+}
+#apply .card form input::placeholder {
+  font-size: 18px;
+  color: #9EA3BD;
+}
+#apply .card form .form-group:not(:last-child) {
+  margin-bottom: 17.4px;
+}
+#apply .card form .button-wrapper {
+  margin-top: 41.4px;
+  text-align: center;
+}
+#apply .card .rectangle-one {
+  position: absolute;
+  top: 42.95px;
+  left: -80px;
+}
+#apply .card .rectangle-two {
+  position: absolute;
+  top: 260px;
+  right: -80px;
+}
+@media (max-width: 576px) {
+  #apply .card {
+    height: auto;
+    width: 100%;
+  }
+  #apply .card form {
+    padding: 0 60px;
+  }
+  #apply .rectangle-one {
+    display: none;
+  }
+  #apply .rectangle-two {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #apply .card {
+    height: auto;
+    width: 100%;
+  }
+  #apply .card form {
+    padding: 0 60px;
+  }
+  #apply .rectangle-one {
+    display: none;
+  }
+  #apply .rectangle-two {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #apply .card {
+    height: auto;
+    width: 100%;
+  }
+  #apply .card form {
+    padding: 0 120px;
+  }
+  #apply .rectangle-one {
+    display: none;
+  }
+  #apply .rectangle-two {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #apply .card {
+    height: 858px;
+    width: 1000px;
+  }
+  #apply .card form {
+    padding: 0 220px;
+  }
+  #apply .rectangle-one {
+    display: block;
+  }
+  #apply .rectangle-two {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  #apply .card {
+    height: 858px;
+    width: 1200px;
+  }
+  #apply .card form {
+    padding: 0 220px;
+  }
+  #apply .rectangle-one {
+    display: block;
+  }
+  #apply .rectangle-two {
+    display: block;
+  }
+}/*# sourceMappingURL=apply.css.map */

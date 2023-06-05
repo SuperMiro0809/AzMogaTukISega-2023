@@ -1,0 +1,82 @@
+@import '../utilities/variables';
+@import '../utilities/responsive';
+
+#faq {
+    margin-top: 164px;
+    padding: 0 80px;
+
+    .card {
+        padding: 96px 64px;
+        display: flex;
+        gap: 64px;
+        
+        .text-wrapper {
+            flex-basis: 357px;
+
+            h2 {
+                font-size: 48px;
+                color: $textColor;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 16px;
+                color: $paragraph50;
+                margin-top: 24px;
+            }
+        }
+
+        .questions {
+            flex-basis: 100%;
+            
+            .question {
+                cursor: pointer;
+                border-bottom: 1px solid $light;
+                padding-bottom: 24px;
+                margin-bottom: 24px;
+
+                article {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    p {
+                        font-size: 21px;
+                        color: $paragraph70;
+                    }
+
+                    img {
+                        margin-left: 8px;
+                    }
+
+                    &.open {
+                        font-weight: 700;
+                        color: $paragraph100;
+                        border-bottom: none;
+                    }
+                }
+
+                .inner-text {
+                    display: none;
+                }
+                
+                p {
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        @include xs {
+            flex-direction: column;
+        }
+
+        @include sm {
+            flex-direction: column;
+        }
+
+        @include lg {
+            flex-direction: row;
+        }
+    }
+}
+

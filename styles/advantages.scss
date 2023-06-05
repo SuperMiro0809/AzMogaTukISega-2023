@@ -1,0 +1,59 @@
+@import '../utilities/variables';
+@import '../utilities/responsive';
+
+#advantages {
+    padding: 39.96px 80px;
+    margin-top: 96px;
+
+    div:first-child {
+
+        h2 {
+            font-size: 48px;
+            color: $paragraph100;
+        }
+
+        .icon-wrapper {
+            margin-top: 24px;
+        }
+
+        button {
+            margin-top: 48px;
+        }
+    }
+
+    .card {
+        padding: 64px 32px 48px 32px;
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: $paragraph100;
+        }
+
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+            color: $paragraph70;
+        }
+    }
+
+
+    @include sm {
+        div:first-child {
+            text-align: center;
+        }
+    }
+
+    @include md {
+        div:first-child {
+            text-align: center;
+        }
+    }
+
+    @include lg {
+        div:first-child {
+            text-align: left;
+        }
+    }
+}

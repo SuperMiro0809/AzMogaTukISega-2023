@@ -1,0 +1,59 @@
+#promo {
+  padding: 0 142.5px;
+  margin-top: 129px;
+  position: relative;
+  z-index: 1;
+}
+#promo h1 {
+  font-size: 101px;
+  line-height: 101px;
+}
+#promo h1 .name {
+  color: #F591CE;
+}
+#promo h1 .text {
+  -webkit-text-fill-color: #F3F4F6;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F591CE;
+}
+@media (max-width: 576px) {
+  #promo {
+    padding: 0 64px;
+  }
+  #promo h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  #promo::after {
+    content: "";
+  }
+}
+@media (min-width: 576px) {
+  #promo {
+    padding: 0 64px;
+  }
+  #promo h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  #promo::after {
+    content: "";
+  }
+}
+@media (min-width: 768px) {
+  #promo {
+    padding: 0 142.5px;
+  }
+  #promo h1 {
+    font-size: 101px;
+    line-height: 101px;
+  }
+  #promo::after {
+    content: url("/assets/White_Background.svg");
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: -80%;
+    z-index: -1;
+  }
+}/*# sourceMappingURL=promo.css.map */

@@ -1,0 +1,138 @@
+@import '../utilities/variables';
+@import '../utilities/responsive';
+
+#how-it-works {
+    background-color: $green;
+    position: relative;
+    z-index: 1;
+
+    .title {
+        color: $white;
+        font-size: 48px;
+    }
+
+    .title-yellow-icon {
+        margin-top: 24px;
+        margin-bottom: 61px;
+    }
+
+    .card {
+        display: flex;
+        padding: 48px 32px;
+        align-items: center;
+        gap: 16px;
+        z-index: 9999;
+
+        .number {
+            color: $yellow;
+            font-size: 90px;
+            font-weight: 200;
+        }
+
+        .text {
+            font-size: 21px;
+            line-height: 28.35px;
+            width: 450px;
+            color: $textColor;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .cards-illustration {
+        position: absolute;
+        top: 149.5px;
+        left: 60%;
+    }
+
+    &::after {
+        content: url('/assets/Mask-group.svg');
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 75%;
+        z-index: -1;
+    }
+
+    @include xs {
+        padding: 96px 100px;
+
+        .card {
+            &:nth-child(even) {
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .cards-illustration {
+            display: none;
+        }
+    }
+
+    @include sm {
+        padding: 96px 100px;
+
+        .card {
+            &:nth-child(even) {
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .cards-illustration {
+            display: none;
+        }
+    }
+
+    @include md {
+        padding: 96px 100px;
+
+        .card {
+            &:nth-child(even) {
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .cards-illustration {
+            display: none;
+        }
+    }
+
+    @include lg {
+        padding: 96px 190px;
+
+        .card {
+            &:nth-child(even) {
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .cards-illustration {
+            display: none;
+        }
+    }
+
+    @include xl {
+        padding: 96px 190px;
+
+        .card {
+            &:nth-child(even) {
+                width: 850px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .cards-illustration {
+            display: block;
+        }
+    }
+}
